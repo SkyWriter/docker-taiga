@@ -42,7 +42,7 @@ if [ "$TAIGA_SSL" = "True" ]; then
   echo "Enabling SSL support!"
   sed -i "s/http:\/\//https:\/\//g" /taiga/conf.json
   sed -i "s/ws:\/\//wss:\/\//g" /taiga/conf.json
-  mv /etc/nginx/ssl.conf /etc/nginx/conf.d/default.conf
+  #mv /etc/nginx/ssl.conf /etc/nginx/conf.d/default.conf
 elif grep -q "wss://" "/taiga/conf.json"; then
   echo "Disabling SSL support!"
   sed -i "s/https:\/\//http:\/\//g" /taiga/conf.json
