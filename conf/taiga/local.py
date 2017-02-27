@@ -13,3 +13,6 @@ from .docker import *
 PUBLIC_REGISTER_ENABLED = False
 DEBUG = False
 TEMPLATE_DEBUG = False
+
+CELERY_ENABLED = True
+CELERY_ALWAYS_EAGER = True
